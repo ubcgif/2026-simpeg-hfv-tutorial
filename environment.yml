@@ -1,0 +1,9 @@
+name: simpeg-tutorial-2026
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - jupyter
+  - simpeg>=0.25.0
+  - discretize>=0.12.0
+  - matplotlib
