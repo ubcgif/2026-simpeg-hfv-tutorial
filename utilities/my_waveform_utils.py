@@ -44,3 +44,50 @@ class TriangularUTEMWaveform(BaseWaveform):
             return 3 - slope * time
 
 
+class SquareUTEMWaveform(BaseWaveform):
+    """Well-regulated square UTEM waveform.
+
+    Parameters
+    ----------
+    operating_frequency : float
+        The operating frequency in Hz.
+    """
+
+    def __init__(self, operating_frequency, off_time=np.inf, **kwargs):
+        super().__init__(off_time=off_time, has_initial_fields=False, **kwargs)
+        self.operating_frequency = operating_frequency
+
+    @property
+    def operating_frequency(self):
+        """UTEM operating frequency.
+
+        Returns
+        -------
+        float
+            The UTEM operating frequency in Hz.
+        """
+        return self._operating_frequency
+
+    @operating_frequency.setter
+    def operating_frequency(self, value):
+        self._operating_frequency = validate_float("operating_frequency", value, min_val=0.)
+
+    def eval(self, time):  # noqa: A003
+
+        period = 1 / self.operating_frequency
+        time = np.round(time % period, 12)
+
+        if time == 0. or time > (period / 2):
+            return -1.
+        return 1.
+
+
+def get_precise_time_steps(time_length, n_step_lengths, n_steps_per_length, scale_factor):
+
+    intervals = [n_steps_per_length * scale_factor**ii for ii in range(n_step_lengths)]
+
+    # Minimum step size
+    dt = time_length / sum(intervals)
+
+    time_steps = [scale_factor**ii * dt * np.ones(n_steps_per_length) for ii in range(n_step_lengths)]
+    return np.hstack(time_steps)
