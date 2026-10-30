@@ -1,2 +1,6 @@
 # output PTE files
 *.pte
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+.virtual_documents
