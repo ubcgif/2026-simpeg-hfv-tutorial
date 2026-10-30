@@ -3,14 +3,6 @@ channels:
   - conda-forge
 dependencies:
   - python=3.14
-  - numpy>=1.22
-  - scipy>=1.12
-  - pymatsolver>=0.3
+  - simpeg=0.26
   - matplotlib-base
-  - discretize>=0.12
-  - geoana>=0.8.1
   - jupyter=1.1.1
-  - git
-  - pip
-  - pip:
-    - git+https://github.com/simpeg/simpeg.git@main#cf416888584695eef1c8758aa0dde64d36c7c740
