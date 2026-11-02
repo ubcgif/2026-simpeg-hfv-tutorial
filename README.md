@@ -6,7 +6,7 @@
 | -------------------------- | --------------------------------------------------------------------------------------------------------- |
 | When                       | November 6, 2026                                                                                          |
 | Maxwell plate notebook     | [notebooks/fwd_utem_hierarchical_3d_part_1.ipynb](notebooks/fwd_utem_hierarchical_3d_part_1.ipynb)        |
-| Delaunay surface notebook  | [notebooks/fwd_utem_hierarchical_3d_part_2.ipynb](notebooks/fwd_utem_hierarchical_3d_part_1-sparse.ipynb) |
+| Delaunay surface notebook  | [notebooks/fwd_utem_hierarchical_3d_part_2.ipynb](notebooks/fwd_utem_hierarchical_3d_part_2.ipynb)        |
 
 ## How to run the notebooks
 
@@ -27,7 +27,7 @@ Follow the instructions provided by any of them to install it in your system.
 Then, download this repository as a [zip file][repo-zip], or clone it with `git`:
 
 ```bash
-git clone https://github.com/ubcgif/2026-hierarchical-utem-tutorial.git
+git clone https://github.com/ubcgif/2026-simpeg-hfv-tutorial.git
 ```
 
 ### Create a new conda environment
@@ -73,4 +73,4 @@ License](notebooks/LICENSE).
 [anaconda]: https://anaconda.org
 [miniconda]: https://docs.anaconda.com/miniconda/miniconda-install
 [miniforge]: https://github.com/conda-forge/miniforge
-[repo-zip]: https://github.com/ubcgif/2026-hierarchical-utem-tutorial/archive/refs/heads/main.zip
+[repo-zip]: https://github.com/ubcgif/2026-simpeg-hfv-tutorial/archive/refs/heads/main.zip
