@@ -3,7 +3,7 @@ from simpeg.electromagnetics.time_domain.sources import BaseWaveform
 from simpeg.utils import validate_float
 
 
-class TriangularUTEMWaveform(BaseWaveform):
+class TriangularWaveform(BaseWaveform):
     """Well-regulated triangular UTEM waveform.
 
     Parameters
@@ -32,7 +32,7 @@ class TriangularUTEMWaveform(BaseWaveform):
         self._operating_frequency = validate_float("operating_frequency", value, min_val=0.)
 
     def eval(self, time):  # noqa: A003
-        
+
         period = 1 / self.operating_frequency
         slope = 4 * self.operating_frequency
 
@@ -44,7 +44,7 @@ class TriangularUTEMWaveform(BaseWaveform):
             return 3 - slope * time
 
 
-class SquareUTEMWaveform(BaseWaveform):
+class SquareWaveform(BaseWaveform):
     """Well-regulated square UTEM waveform.
 
     Parameters
