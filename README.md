@@ -27,7 +27,7 @@ Follow the instructions provided by any of them to install it in your system.
 Then, download this repository as a [zip file][repo-zip], or clone it with `git`:
 
 ```bash
-git clone https://github.com/ubcgif/2026-hierarchical-utem-tutorial.git
+git clone https://github.com/ubcgif/2026-hfv-tutorial.git
 ```
 
 and change directory into the `2026-hierarchical-utem-tutorial` folder 
