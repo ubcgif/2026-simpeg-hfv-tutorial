@@ -27,13 +27,13 @@ Follow the instructions provided by any of them to install it in your system.
 Then, download this repository as a [zip file][repo-zip], or clone it with `git`:
 
 ```bash
-git clone https://github.com/ubcgif/2026-hfv-tutorial.git
+git clone https://github.com/ubcgif/2026-simpeg-hfv-tutoriall.git
 ```
 
-and change directory into the `2026-hierarchical-hfv-tutorial` folder 
+and change directory into the `2026-simpeg-hfv-tutorial` folder 
 
 ```bash
-cd 2026-hierarchical-hfv-tutorial
+cd 2026-simpeg-hfv-tutorial
 ```
 
 ### Create a new conda environment
