@@ -30,6 +30,12 @@ Then, download this repository as a [zip file][repo-zip], or clone it with `git`
 git clone https://github.com/ubcgif/2026-simpeg-hfv-tutorial.git
 ```
 
+and change directory into the `2026-simpeg-hfv-tutorial` folder 
+
+```bash
+cd 2026-simpeg-hfv-tutorial
+```
+
 ### Create a new conda environment
 
 In the downloaded folder you'll find an `environment.yml` file that you can use
