@@ -3,8 +3,8 @@ from simpeg.electromagnetics.time_domain.sources import BaseWaveform
 from simpeg.utils import validate_float
 
 
-class TriangularWaveform(BaseWaveform):
-    """Well-regulated triangular UTEM waveform.
+class SawtoothWaveform(BaseWaveform):
+    """Well-regularted wawtooth waveform with a 100% duty cycle.
 
     Parameters
     ----------
@@ -18,12 +18,12 @@ class TriangularWaveform(BaseWaveform):
 
     @property
     def operating_frequency(self):
-        """UTEM operating frequency.
+        """The operating frequency.
 
         Returns
         -------
         float
-            The UTEM operating frequency in Hz.
+            The operating frequency in Hz.
         """
         return self._operating_frequency
 
@@ -45,7 +45,7 @@ class TriangularWaveform(BaseWaveform):
 
 
 class SquareWaveform(BaseWaveform):
-    """Well-regulated square UTEM waveform.
+    """Well-regulated square waveform with 100% duty cycle.
 
     Parameters
     ----------
@@ -59,12 +59,12 @@ class SquareWaveform(BaseWaveform):
 
     @property
     def operating_frequency(self):
-        """UTEM operating frequency.
+        """The operating frequency.
 
         Returns
         -------
         float
-            The UTEM operating frequency in Hz.
+            The operating frequency in Hz.
         """
         return self._operating_frequency
 
