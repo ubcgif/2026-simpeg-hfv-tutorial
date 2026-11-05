@@ -2,7 +2,7 @@ name: simpeg-hfv-tutorial
 channels:
   - conda-forge
 dependencies:
-  - python=3.14
+  - python=3.12
   - simpeg=0.26
   - matplotlib-base
   - jupyter=1.1.1
